@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/crobo-earn-prototype/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crobo Earn — Prototype</title>
+    <!-- The dashboard prototype is dark by default; apply before first paint to
+         avoid a flash. Mirrors ThemeProvider (localStorage croboTheme). -->
+    <script>
+      ;(function () {
+        try {
+          var t = localStorage.getItem("croboTheme")
+          var dark = t !== "light" // default dark unless explicitly set light
+          if (dark) document.documentElement.classList.add("dark")
+        } catch (e) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/crobo-earn-prototype/assets/prototype-CaE3us2_.js"></script>
+    <link rel="stylesheet" crossorigin href="/crobo-earn-prototype/assets/prototype-CLoHVQ36.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
