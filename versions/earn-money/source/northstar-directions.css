@@ -2279,6 +2279,10 @@ button.north-stack-primary {
   font-size: clamp(54px, 10.5vw, 144px);
 }
 
+.north-stack-wealth h2.north-stack-offer-rate {
+  font-size: clamp(76px, 13vw, 176px);
+}
+
 .north-stack-offer-rate-label {
   margin: 16px 0 0;
   color: var(--offer-muted, rgba(11, 29, 38, 0.72));

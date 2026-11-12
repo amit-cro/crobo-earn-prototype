@@ -15,27 +15,26 @@ import { EditorialExtras } from "./EditorialExtras"
 import { HeroFlow } from "./HeroFlow"
 
 const cashBenefits = [
-  { icon: Landmark, label: "Interest paid monthly" },
   { icon: ShieldCheck, label: "Up to $1M FDIC insurance through partner banks" },
+  { icon: Landmark, label: "Interest accrues daily, paid monthly" },
   { icon: Clock3, label: "Withdraw anytime; usually 1–3 business days" },
   { icon: Layers3, label: "No portfolio to manage" },
   { icon: LockOpen, label: "No lock-in period" },
 ]
 
 const incomeBenefits = [
-  { icon: Layers3, label: "Dividend-paying preferred shares" },
-  { icon: Landmark, label: "Managed by Crobo Advisors" },
-  { icon: WalletCards, label: "Monthly cash or automatic reinvestment" },
+  { icon: Layers3, label: "Professionally managed" },
+  { icon: WalletCards, label: "Monthly income as a second paycheck, or reinvest" },
+  { icon: Landmark, label: "Withdraw anytime" },
   { icon: TrendingUp, label: "Start with $500 · add more anytime" },
   { icon: LockOpen, label: "No lock-in period" },
 ]
 
 const wealthBenefits = [
   { icon: TrendingUp, label: "Designed for long-term compounding" },
-  { icon: Clock3, label: "Built for money you can leave invested" },
-  { icon: CircleAlert, label: "Very high risk; returns can vary" },
+  { icon: Clock3, label: "Built for money you can leave for 3+ years" },
+  { icon: CircleAlert, label: "Expect high volatility by design" },
   { icon: WalletCards, label: "Early access by invitation" },
-  { icon: Layers3, label: "Access and fees to be confirmed" },
 ]
 
 export function EditorialDirection() {
@@ -148,8 +147,7 @@ export function EditorialDirection() {
                 </button>
               </div>
               <p className="north-stack-disclosure">
-                Includes a 1.5% annual advisory fee. Targets are not guaranteed;
-                investments can lose value.
+                Targets are not guaranteed; investments can lose value.
               </p>
             </div>
           </div>
@@ -162,8 +160,8 @@ export function EditorialDirection() {
                 <p className="north-stack-kicker">WEALTH</p>
                 <span className="north-stack-invite">INVITE ONLY</span>
               </div>
-              <h2 className="north-stack-offer-rate">20%+</h2>
-              <p className="north-stack-offer-rate-label">Illustrative annual target</p>
+              <h2 className="north-stack-offer-rate">3+ years</h2>
+              <p className="north-stack-offer-rate-label">A long-term investment horizon</p>
               <p className="north-stack-offer-promise">Build for what comes next.</p>
               <ul className="north-stack-offer-benefits">
                 {wealthBenefits.map(({ icon: Icon, label }) => (
@@ -182,6 +180,9 @@ export function EditorialDirection() {
                   Join the early list
                 </button>
               </div>
+              <p className="north-stack-disclosure">
+                Investments can lose value. A 3+ year horizon is not a lock-in period.
+              </p>
             </div>
           </div>
         </section>
